@@ -27,12 +27,13 @@ CaReAl (Capturing Read Alignments) is a high-performance alignment capturing too
 
  * Troubleshoot
    - BAM file should be indexed with SAMTools and please use the command below to build an index file:  
-   _$ samtools index Sample_001.bam_
+   ```$ samtools index Sample_001.bam```
    - To make sure that tview in samtools works properly, try the command below:  
-   _$ samtools tview -d T -p chr1:2409792-2409992 Sample_001.bam hg19.fa_
+   ```$ samtools tview -d T -p chr1:2409792-2409992 Sample_001.bam hg19.fa```
    - Make sure that the VCF is located in the same folder as the BAM file and that their filenames are identical.
 
-  * For more information please visit: [CaReAl](http://www.snubi.org/~lootpiz/CaReAl/)
+  * For more information please visit: [CaReAl](http://www.snubi.org/~lootpiz/CaReAl/)  
 
+  ![CaReAl](/imgs/logo.png) 
 
 
