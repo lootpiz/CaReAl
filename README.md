@@ -1,0 +1,2 @@
+# CaReAl
+ Capturing Read Alignments
