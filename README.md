@@ -14,16 +14,16 @@ CaReAl (Capturing Read Alignments) is a high-performance alignment capturing too
    - SAMTools (version >= 0.1.19)
    
  * Synopsis  
- ```./careal -b \<BAM or BAMs in TXT\> -t \<target or targets in TXT\> -r \<reference genome\> \[OPTIONS\]```
+ ```./careal -b <BAM or BAMs in TXT> -t <target or targets in TXT> -r <reference genome> [OPTIONS]```
     * Required fields  
-        -b, --bamfile 	<FILE> 	: input a BAM or BAMs with directory paths in TXT, (i.e., sample_01.bam, samples.txt)  
-        -t, --target 	<FILE> 	: chromosome and position or chromosome and range, or targets in TXT, (i.e., chr10:53933206, chr10:53933106-53933306, targets.txt)  
-        -r, --reference 	<FILE> 	: reference genome file in FASTA, (i.e., genome.fasta)  
+        -b, --bamfile <FILE> : input a BAM or BAMs with directory paths in TXT, (i.e., sample_01.bam, samples.txt)  
+        -t, --target <FILE> : chromosome and position or chromosome and range, or targets in TXT, (i.e., chr10:53933206, chr10:53933106-53933306, targets.txt)  
+        -r, --reference <FILE> : reference genome file in FASTA, (i.e., genome.fasta)  
     * Optional fields  
-        -g, --gene 	<FILE> 	: gene information file in BED indexed by Tabix  
-        -v, --with-vcf 	<STRING> 	: query VCF [TRUE or FALSE], default is FALSE  
-        -o, --folder 	<STRING> 	: output directory name, default is "OUTPUT"  
-        -n, --cpu 	<NUMBER> 	: number of CPUs to use, default is 4  
+        -g, --gene <FILE> : gene information file in BED indexed by Tabix  
+        -v, --with-vcf <STRING> : query VCF [TRUE or FALSE], default is FALSE  
+        -o, --folder <STRING> : output directory name, default is "OUTPUT"  
+        -n, --cpu <NUMBER> : number of CPUs to use, default is 4  
 
  * Troubleshoot
    - BAM file should be indexed with SAMTools and please use the command below to build an index file:  
