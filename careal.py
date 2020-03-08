@@ -893,5 +893,5 @@ if __name__ == "__main__":
 
 	print("\nProcess done! : " + str(end_time - start_time) + " second(s)")
 	
-## CaReAl v1.1 (@'3(o.o);
+## CaReAl v1.2 (@'3(o.o);
 ## EOF 2017.12.29
