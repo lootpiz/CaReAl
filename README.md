@@ -1,7 +1,9 @@
 # CaReAl (Capturing Read Alignments)
 
-![CaReAl](/imgs/CaReAl_logo.png)  
- * **CaReAl** is a high-performance alignment capturing tool for visualizing the read-alignment status of nucleotide sequences and associated genome features.
+![CaReAl](/imgs/CaReAl_banner.png)  
+
+### About
+ * CaReAl is a high-performance alignment capturing tool for visualizing the read-alignment status of nucleotide sequences and associated genome features.
 
 ### Features
  * Visualizing full-depth of aligned reads.
@@ -42,6 +44,23 @@
  * File structure (in BED)  
  ![BED format](/imgs/gene_db_structure.png)
 
+### Example codes and results
+ * _Example 1_:  
+ ```$ ./careal -b Sample_001.bam -t chr1:2409792-2409992 -r hg19.fasta```  
+ ![Example 1](/imgs/example_1.png)
+ * _Example 2_: include gene symbol on a plot    
+ ```$ ./careal -b Sample_001.bam -t chr1:2409892 -r hg19.fasta -g Homo_sapiens_hg19_75.txt.gz```  
+ ![Example 2](/imgs/example_2.png)
+ * _Example 3_: display the list of variants from a given VCF    
+ ```$ ./careal -b Sample_001.bam -t chr1:2409892 -r hg19.fasta -g Homo_sapiens_GRCh37_75.txt.gz -v TRUE```  
+ ![Example 3](/imgs/example_3.png)
+ * _Example 4_: include multiple BAM files and targets  
+ ```$ ./careal -b bam_files.txt -t targets.txt -r hg19.fasta -g Homo_sapiens_GRCh37_75.txt.gz -v TRUE -o project_A```  
+   * _bam_files.txt_:  
+   ![bam_files](/imgs/bam_files.png)  
+   * _targets.txt_:  
+   ![targets](/imgs/targets.png)
+
 ### FAQ
  * What are good targets for reads investigation and how do I get them?  
    * Variants with low depth coverage (i.e., DP < 5 for heterozygous SNV) are good targets and you can get targets using [VCFTools](https://vcftools.github.io/man_latest.html) (with '--minDP', '--maxDP' options).
@@ -60,3 +79,6 @@
  * Make sure that the VCF is located in the same folder as the BAM file and that their filenames are identical.  
    For example, _Sample_001.bam, Sample_001.bai, Sample_001.vcf.gz,_ and _Sample_001.vcf.gz.tbi_ should be in the same folder.  
    ![File names](/imgs/bam_vcf_directory.png)
+
+
+![CaReAl](/imgs/CaReAl_logo.png)  
