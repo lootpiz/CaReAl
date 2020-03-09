@@ -1,6 +1,6 @@
 # CaReAl
 
-![CaReAl](/imgs/logo.png)  | **CaReAl** is a high-performance alignment capturing tool for visualizing the read-alignment status of nucleotide sequences and associated genome features.
+![CaReAl](/imgs/CaReAl_logo.png)  | **CaReAl** is a high-performance alignment capturing tool for visualizing the read-alignment status of nucleotide sequences and associated genome features.
 
 ----
 
@@ -12,11 +12,9 @@
    * Optimized for the systematic exploration of regions of interest.
    * Useful for evaluating variant calls and detecting technical biases.
 
- * Overview
-   * ![Overview](/imgs/CaReAl_overview.png)
+ * Overview  ![Overview](/imgs/CaReAl_overview.png)
  
- * How to interpret the plot?
-   * ![CaReAl snapshot](/imgs/CaReAl_example.png)
+ * How to interpret the plot?  ![CaReAl snapshot](/imgs/CaReAl_example.png)
 
  * Prerequisite
    * Python (version >= 2.7) with packages _tabix, multiprocessing, optparse_
@@ -40,7 +38,8 @@
    * Provide gene symbols on a plot based on a given target.
    * It must be compressed by bgzip and indexed by tabix.
    * Gene information: [Homo_sapiens_hg19_75.txt.gz](/database/Homo_sapiens_hg19_75.txt.gz)
-   * File structure (in BED)  ![BED format](/imgs/gene_db_structure.png)
+   * File structure (in BED)  
+   ![BED format](/imgs/gene_db_structure.png)
 
  * FAQ
    1. What are good targets for reads investigation and how do I get them?  
@@ -58,4 +57,5 @@
    - To make sure that tview in samtools works properly, try the command below:  
    ```$ samtools tview -d T -p chr1:2409792-2409992 Sample_001.bam hg19.fa```
    - Make sure that the VCF is located in the same folder as the BAM file and that their filenames are identical.  
-     For example, _Sample_001.bam, Sample_001.bai, Sample_001.vcf.gz,_ and _Sample_001.vcf.gz.tbi_ should be in the same folder.  ![File names](/imgs/bam_vcf_directory)
+     For example, _Sample_001.bam, Sample_001.bai, Sample_001.vcf.gz,_ and _Sample_001.vcf.gz.tbi_ should be in the same folder.  
+     ![File names](/imgs/bam_vcf_directory.png)
