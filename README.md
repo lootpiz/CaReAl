@@ -47,7 +47,7 @@
 ### Example codes and results
  * _Example 1_:  
  ```$ ./careal -b Sample_001.bam -t chr1:2409792-2409992 -r hg19.fasta```  
- <a href="http://public.lootpiz.com/images/careal_output_example_1.png" target="_blank">![Example 1](/imgs/example_1.png)</a>
+ [![Example 1](/imgs/example_1.png)](http://public.lootpiz.com/images/careal_output_example_1.png)
  * _Example 2_: include gene symbol on a plot    
  ```$ ./careal -b Sample_001.bam -t chr1:2409892 -r hg19.fasta -g Homo_sapiens_hg19_75.txt.gz```  
  [![Example 2](/imgs/example_2.png)](http://public.lootpiz.com/images/careal_output_example_2.png)
