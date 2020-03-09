@@ -47,13 +47,13 @@
 ### Example codes and results
  * _Example 1_:  
  ```$ ./careal -b Sample_001.bam -t chr1:2409792-2409992 -r hg19.fasta```  
- ![Example 1](/imgs/example_1.png)
+ [![Example 1](/imgs/example_1.png)](http://public.lootpiz.com/images/careal_output_example_1.png)
  * _Example 2_: include gene symbol on a plot    
  ```$ ./careal -b Sample_001.bam -t chr1:2409892 -r hg19.fasta -g Homo_sapiens_hg19_75.txt.gz```  
- ![Example 2](/imgs/example_2.png)
+ [![Example 2](/imgs/example_2.png)](http://public.lootpiz.com/images/careal_output_example_2.png)
  * _Example 3_: display the list of variants from a given VCF    
  ```$ ./careal -b Sample_001.bam -t chr1:2409892 -r hg19.fasta -g Homo_sapiens_GRCh37_75.txt.gz -v TRUE```  
- ![Example 3](/imgs/example_3.png)
+ [![Example 3](/imgs/example_3.png)](http://public.lootpiz.com/images/careal_output_example_3.png)
  * _Example 4_: include multiple BAM files and targets  
  ```$ ./careal -b bam_files.txt -t targets.txt -r hg19.fasta -g Homo_sapiens_GRCh37_75.txt.gz -v TRUE -o project_A```  
    * _bam_files.txt_:  
