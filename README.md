@@ -43,8 +43,8 @@
 
  * FAQ
    * What are good targets for reads investigation and how do I get them?  
-     * Variants with low depth coverage (i.e., DP < 5 for heterozygous SNV) are good targets and you can get targets using [VCFTools](https://vcftools.github.io/man_latest.html) (with "--minDP", "--maxDP" options).
-     * [Minikel et al.](http://stm.sciencemag.org/content/8/322/322ra9) reviewed rare variants and provided IGV screenshots of the variants deemed to be genuine on (GitHub)[https://github.com/ericminikel/prnp_penetrance/tree/master/supplement/igv].
+     * Variants with low depth coverage (i.e., DP < 5 for heterozygous SNV) are good targets and you can get targets using [VCFTools](https://vcftools.github.io/man_latest.html) (with '--minDP', '--maxDP' options).
+     * [Minikel et al.](http://stm.sciencemag.org/content/8/322/322ra9) reviewed rare variants and provided IGV screenshots of the variants deemed to be genuine on [GitHub](https://github.com/ericminikel/prnp_penetrance/tree/master/supplement/igv).
    * What are the known error patterns of alignment?  
      * [Seo and Park et al.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0181304) reported four distinct error patterns from Ion Proton : (1) simplicity region, (2) SNV cluster, (3) peripheral sequence read, and (4) base inversion.
      * [Schirmer et al.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0976-y) evaluated variants from Illumina platforms and revealed a substantial bias related to motifs ending in "GG".
