@@ -25,14 +25,14 @@
    - Synopsis  
    ```./careal -b <BAM or BAMs in TXT> -t <target or targets in TXT> -r <reference genome> [OPTIONS]```
    * Required fields  
-        **-b, --bamfile /<FILE/>**: input a BAM or BAMs with directory paths in TXT, (i.e., sample_01.bam, samples.txt)  
-        **-t, --target /<FILE/>**: chromosome and position or chromosome and range, or targets in TXT, (i.e., chr10:53933206, chr10:53933106-53933306, targets.txt)  
-        **-r, --reference /<FILE/>**: reference genome file in FASTA, (i.e., genome.fasta)  
+        **-b, --bamfile \<FILE\>**: input a BAM or BAMs with directory paths in TXT, (i.e., sample_01.bam, samples.txt)  
+        **-t, --target \<FILE\>**: chromosome and position or chromosome and range, or targets in TXT, (i.e., chr10:53933206, chr10:53933106-53933306, targets.txt)  
+        **-r, --reference \<FILE\>**: reference genome file in FASTA, (i.e., genome.fasta)  
    * Optional fields  
-        **-g, --gene /<FILE/>**: gene information file in BED indexed by Tabix  
-        **-v, --with-vcf /<STRING/>**: query VCF /[TRUE or FALSE/], default is FALSE  
-        **-o, --folder /<STRING/>**: output directory name, default is "OUTPUT"  
-        **-n, --cpu /<NUMBER/>**: number of CPUs to use, default is 4  
+        **-g, --gene \<FILE\>**: gene information file in BED indexed by Tabix  
+        **-v, --with-vcf \<STRING\>**: query VCF \[TRUE or FALSE\], default is FALSE  
+        **-o, --folder \<STRING\>**: output directory name, default is "OUTPUT"  
+        **-n, --cpu \<NUMBER\>**: number of CPUs to use, default is 4  
 
  * Database
    * Provide gene symbols on a plot based on a given target.
@@ -42,13 +42,13 @@
    ![BED format](/imgs/gene_db_structure.png)
 
  * FAQ
-   1. What are good targets for reads investigation and how do I get them?  
+   * What are good targets for reads investigation and how do I get them?  
      * Variants with low depth coverage (i.e., DP < 5 for heterozygous SNV) are good targets and you can get targets using [VCFTools](https://vcftools.github.io/man_latest.html) (with "--minDP", "--maxDP" options).
      * [Minikel et al.](http://stm.sciencemag.org/content/8/322/322ra9) reviewed rare variants and provided IGV screenshots of the variants deemed to be genuine on GitHub.
-   2. What are the known error patterns of alignment?  
+   * What are the known error patterns of alignment?  
      * [Seo and Park et al.](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0181304) reported four distinct error patterns from Ion Proton : (1) simplicity region, (2) SNV cluster, (3) peripheral sequence read, and (4) base inversion.
      * [Schirmer et al.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0976-y) evaluated variants from Illumina platforms and revealed a substantial bias related to motifs ending in "GG".
-   3. What is the maximum depth and width of a snapshot?
+   * What is the maximum depth and width of a snapshot?
      * We tested a plot with a maximum depth of 2200x and width of 3,000 bp, but they depend on the graphics hardware.
 
  * Troubleshoot
