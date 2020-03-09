@@ -13,11 +13,11 @@
 
 ### Workflow
  * Schematic overview   
- ![Overview](/imgs/CaReAl_overview.png)
+ [![Overview](/imgs/CaReAl_overview.png)](http://public.lootpiz.com/images/careal_overview.png)
  
 ### CaReAl results
  * How to interpret the plot?  
- ![CaReAl snapshot](/imgs/CaReAl_example.png)
+ [![CaReAl snapshot](/imgs/CaReAl_example.png)](http://public.lootpiz.com/images/careal_example.png)
 
 ### Prerequisite
  * Python (version >= 2.7) with packages _tabix, multiprocessing, optparse_
