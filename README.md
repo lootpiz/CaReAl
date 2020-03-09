@@ -9,10 +9,12 @@
  * Optimized for the systematic exploration of regions of interest.
  * Useful for evaluating variant calls and detecting technical biases.
 
-### Overview
+### Workflow
+ * Schematic overview   
  ![Overview](/imgs/CaReAl_overview.png)
  
-### How to interpret the plot?
+### CaReAl results
+ * How to interpret the plot?  
  ![CaReAl snapshot](/imgs/CaReAl_example.png)
 
 ### Prerequisite
