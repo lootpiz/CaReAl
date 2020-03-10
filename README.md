@@ -1,7 +1,5 @@
 ![CaReAl](/imgs/CaReAl_banner.png)  
 
-----
-
 ### About
  * CaReAl is a high-performance alignment capturing tool for visualizing the read-alignment status of nucleotide sequences and associated genome features.
 
