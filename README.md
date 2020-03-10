@@ -79,7 +79,7 @@
    For example, _Sample_001.bam, Sample_001.bai, Sample_001.vcf.gz,_ and _Sample_001.vcf.gz.tbi_ should be in the same folder.  
    ![File names](/imgs/bam_vcf_directory.png)
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
+This work is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].  
 [![CC BY 4.0][cc-by-image]][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
